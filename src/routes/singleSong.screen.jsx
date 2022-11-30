@@ -29,7 +29,7 @@ export const SingleSongScreen = () => {
     <div className="core">
       <div className="main">
         <div className="nav-bar">
-          <Link style={{ textDecoration: "none" }} to="/">
+          <Link style={{ textDecoration: "none", color: "white" }} to="/">
             <div className="gg-arrow-left"></div>
           </Link>
           <div className="now-playing">NOW PLAYING</div>
