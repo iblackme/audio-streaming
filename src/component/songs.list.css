@@ -1,0 +1,41 @@
+.songs {
+  display: block;
+  flex-direction: column;
+  height: 340px;
+  overflow-y: auto;
+}
+
+.songs-text {
+  display: flex;
+  color: #ff781e;
+  justify-content: center;
+}
+
+.single-song-title {
+  color: white;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.single-song {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.song-card {
+  display: flex;
+  background: #19193f;
+  width: 250px;
+  height: 50px;
+  margin-bottom: 15px;
+  justify-content: space-between;
+}
+
+.play {
+  margin-right: 8%;
+  color: chocolate;
+}
+.title {
+  margin-left: 5%;
+}
