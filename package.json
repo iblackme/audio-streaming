@@ -1,5 +1,5 @@
 {
-  "name": "music",
+  "name": "sudio-straming",
   "version": "0.1.0",
   "dependencies": {
     "@emotion/react": "^11.10.5",
@@ -41,5 +41,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/iblackme/audio-streaming.git",
+  "author": "iblackme <118611199+iblackme@users.noreply.github.com>",
+  "license": "MIT"
 }

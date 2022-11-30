@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { MusicBar } from "../component/musicbar.componet";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../lib/firebase";
-import { useParams } from "react-router-dom";
+import { Link, useParams } from "react-router-dom";
 
 export const SingleSongScreen = () => {
   let [getData, setGetData] = useState("");
@@ -29,7 +29,9 @@ export const SingleSongScreen = () => {
     <div className="core">
       <div className="main">
         <div className="nav-bar">
-          <div className="gg-arrow-left"></div>
+          <Link to="/">
+            <div className="gg-arrow-left"></div>
+          </Link>
           <div className="now-playing">NOW PLAYING</div>
           <div className="gg-more-vertical-alt"> </div>
         </div>
