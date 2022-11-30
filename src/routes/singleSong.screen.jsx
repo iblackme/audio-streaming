@@ -3,7 +3,7 @@ import { MusicBar } from "../component/musicbar.componet";
 import { doc, getDoc } from "firebase/firestore";
 import { db } from "../lib/firebase";
 import { Link, useParams } from "react-router-dom";
-
+import "./css/singleSong.screen.css";
 export const SingleSongScreen = () => {
   let [getData, setGetData] = useState("");
   const { id } = useParams();
@@ -41,13 +41,13 @@ export const SingleSongScreen = () => {
         </div>
         <div className="music-info">
           <div className="music-title">
-            <h1> {title && title}</h1>
+            <h1> {title && title.slice(0, 15)}</h1>
           </div>
         </div>
         <div className="music-dital">
           <div className="gg-heart"></div>
           <div className="music-disctiption">
-            <p> {disc && disc}</p>
+            <p> {disc && disc.slice(0, 20)}</p>
           </div>
           <div className="gg-software-upload"></div>
         </div>
